@@ -75,7 +75,6 @@ public class ProductServiceTest {
 
         Mockito.when(categoryService.findById(2L)).thenReturn(categoryDTO);
 
-
         Mockito.when(repository.findById(existingId)).thenReturn(Optional.of(product));
         Mockito.when(repository.findById(nonExistingId)).thenReturn(Optional.empty());
     }
